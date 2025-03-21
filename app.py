@@ -23,6 +23,110 @@ client = genai.Client(api_key=api_key)
 # ====================================
 st.set_page_config(page_title="Gemini AI Assistant", page_icon="🤖", layout="centered")
 
+st.markdown("""
+<style>
+
+/* ===========================
+🌌 Matching Background - Sidebar & Main
+=========================== */
+.stApp {
+    background: linear-gradient(-45deg, #1b0044, #280659, #7209b7, #00b4d8, #5e60ce);
+    background-size: 600% 600%;
+    animation: crystalFlow 30s ease infinite;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Crystal gradient animation */
+@keyframes crystalFlow {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+/* ===========================
+💠 Sidebar Background Style
+=========================== */
+section[data-testid="stSidebar"] {
+    background: rgba(0, 0, 50, 0.6);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    color: #ffffff;
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Sidebar text styling */
+section[data-testid="stSidebar"] h1,
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3,
+section[data-testid="stSidebar"] p {
+    color: #ffffff !important;
+}
+
+/* ===========================
+🎯 Sidebar Button Styling
+=========================== */
+button[data-testid="baseButton-header"] {
+    background-color: #00b4d8;
+    color: white;
+    border-radius: 8px;
+    padding: 0.3rem 0.7rem;
+    border: none;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 180, 216, 0.4);
+    transition: 0.3s ease-in-out;
+    z-index: 9999;
+}
+
+button[data-testid="baseButton-header"]:hover {
+    background-color: #0096c7;
+    transform: scale(1.08);
+}
+
+/* Ensure button is visible in all themes */
+button[title="Main menu"] svg {
+    stroke: white;
+    width: 20px;
+    height: 20px;
+}
+
+</style>
+""", unsafe_allow_html=True)
+
+# Sidebar info panel
+with st.sidebar:
+    st.markdown("## 💠 Neurovia AI")
+    st.markdown("Your intelligent crystal-mind assistant ✨")
+
+    st.markdown("### 🧠 Powered By")
+    st.markdown("""
+    - 🧊 **Google Gemini 2.0 Flash**
+    - ⚙️ Streamlit for UI
+    - 🔐 Secure with .env API key
+    - 🌐 Python-based backend
+    """)
+
+    st.markdown("### 💡 What It Can Do")
+    st.markdown("""
+    - 📖 Explain complex topics clearly  
+    - 💬 Answer questions in real-time  
+    - 🪄 Creative writing & brainstorming  
+    - 🧮 Solve math & logic problems  
+    - 🌍 Summarize articles or websites
+    """)
+
+    st.markdown("### 🔍 Tips for Best Use")
+    st.markdown("""
+    - ✅ Ask specific questions  
+    - 📝 Use full sentences  
+    - ⏳ Wait for responses if slow  
+    - 🤝 Try follow-up prompts
+    """)
+
+    st.markdown("---")
+    st.markdown("👤 *Created by Noor Ul Nisa*")
+    st.markdown("[🔗 LinkedIn](https://www.linkedin.com/in/noor-ul-nisa-a10738356/)")
+
+# ====================================
 # Background and styling
 st.markdown("""
 <style>
@@ -113,7 +217,7 @@ st.markdown("<p style='text-align: center; font-size: 18px;'>Your intelligent, g
 st.markdown("<p style='text-align: center; font-size: 14px; color: #eeeeee;'>Built with ❤️ by Noor Ul Nisa</p>", unsafe_allow_html=True)
 
 st.title("✨ Chat with Neurovia ")
-st.markdown(" Ask anything – powered by <b>Google Gemini 2.0 Flash")
+st.markdown(" Ask anything – powered by Google Gemini 2.0 Flash")
 # ====================================
 # ✍️ Main Container
 # ====================================
