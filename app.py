@@ -17,7 +17,7 @@ if not api_key:
     st.error("🚫 API key not found. Please add GEMINI_API_KEY to your .env file.")
     st.stop()
 
-client = genai.Client(api_key=api_key)
+client = genai.configure(api_key=api_key)
 
 # ====================================
 # 🎨 Page Config & Styling
