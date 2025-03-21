@@ -1,7 +1,8 @@
 # ====================================
 # 🔧 Imports
 # ====================================
-from google import genai
+import google.generativeai as genai # Google Gemini API
+
 import streamlit as st
 from dotenv import load_dotenv
 import os
