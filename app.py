@@ -112,7 +112,7 @@ st.markdown("<h1 style='text-align: center;'>🤖 Neurovia AI</h1>", unsafe_allo
 st.markdown("<p style='text-align: center; font-size: 18px;'>Your intelligent, glowing AI companion — powered by Gemini & crafted with magic 💫</b></p>", unsafe_allow_html=True)
 st.markdown("<p style='text-align: center; font-size: 14px; color: #eeeeee;'>Built with ❤️ by Noor Ul Nisa</p>", unsafe_allow_html=True)
 
-st.title("💠 Welcome to Neurovia")
+st.title("✨ Chat with Neurovia ")
 st.markdown(" Ask anything – powered by <b>Google Gemini 2.0 Flash")
 # ====================================
 # ✍️ Main Container
